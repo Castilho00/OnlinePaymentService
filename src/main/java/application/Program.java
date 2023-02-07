@@ -31,11 +31,11 @@ public class Program {
         Contract contract = new Contract(number, date, totalValue);
 
         System.out.print("Enter the number of installments: ");
-        int n = input.nextInt();
+        int months = input.nextInt();
 
         ContractService contractService = new ContractService(new PaypalService());
 
-        contractService.processContract(contract, n);
+        contractService.processContract(contract, months);
 
         System.out.println("installments:");
         for (Installment installment : contract.getInstallments()) {
