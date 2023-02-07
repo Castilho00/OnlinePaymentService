@@ -5,7 +5,6 @@ import model.entities.Installment;
 import model.services.ContractService;
 import model.services.PaypalService;
 
-import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
